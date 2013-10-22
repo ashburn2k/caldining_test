@@ -1,0 +1,92 @@
+<?php include 'inc/le_meta.php'; ?>
+	
+<div class="container content_wrap">
+	<div class="row">         
+
+<!-- start sidebar  include -->
+	<?php include 'inc/side_menu.php'; ?>
+            
+            <div class="span7 content_inside">
+       <script>
+  (function() {
+    var cx = '005907513008878875572:woxwpcgz7yc';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchresults-only></gcse:searchresults-only>
+            </div>
+            
+          <div class="span3 ">
+            	<div class="well well-small sidebar_info">
+                
+               
+																
+	
+	<h4 class="social">Get Connected</h4>										
+		<ul>
+			<li class="li_border last">
+				
+				<ul>
+					<li><a href="https://www.facebook.com/CalCatering"><img class="social_icon" src="img/fb.png" /></a>
+						<a href="https://twitter.com/CalCatering"><img class="social_icon" src="img/tw.png" /></a><div class="clear"></div>
+					</li>
+				</ul>
+			</li>
+			
+			
+			
+           		</ul>
+	</div>
+    </div>
+            
+ </div>  
+ </div> 
+
+
+<!-- start sidebar  include -->
+<script type="text/javascript"> 
+	<script type="text/javascript">
+/* <![CDATA[ */
+$(function() {
+	var input = document.createElement("input");
+    if(('placeholder' in input)==false) { 
+		$('[placeholder]').focus(function() {
+			var i = $(this);
+			if(i.val() == i.attr('placeholder')) {
+				i.val('').removeClass('placeholder');
+				if(i.hasClass('password')) {
+					i.removeClass('password');
+					this.type='password';
+				}			
+			}
+		}).blur(function() {
+			var i = $(this);	
+			if(i.val() == '' || i.val() == i.attr('placeholder')) {
+				if(this.type=='password') {
+					i.addClass('password');
+					this.type='text';
+				}
+				i.addClass('placeholder').val(i.attr('placeholder'));
+			}
+		}).blur().parents('form').submit(function() {
+			$(this).find('[placeholder]').each(function() {
+				var i = $(this);
+				if(i.val() == i.attr('placeholder'))
+					i.val('');
+			})
+		});
+	}
+});
+/* ]]> */
+</script>
+</script>
+<script type="text/javascript" src="quform/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="quform/js/plugins.js"></script>
+<script type="text/javascript" src="quform/js/scripts.js"></script>
+	<?php include 'inc/footer.php'; ?>

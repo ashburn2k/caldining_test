@@ -1,0 +1,251 @@
+<!-- start meta  include -->
+    <?php include 'inc/le_meta.php'; ?>
+	
+<div class="container content_wrap">
+	<div class="row">         
+
+<!-- start sidebar  include -->
+	<?php include 'inc/side_menu.php'; ?>
+            
+            <div class="span7 content_inside">
+             <h3>Book an event</h3>
+            	<div class="quform-outer quform-theme-light-light">
+        <form class="quform" action="quform/process-all-elements.php" method="post" enctype="multipart/form-data" onclick="">
+
+            <div class="quform-inner">
+               
+                <p class="quform-description">Thank you for your interest in Cal Catering! In order to help us begin planning your next outstanding event, please complete the inquiry form below.</p>
+
+                <div class="quform-elements">
+
+                    <!-- Begin Text input element -->
+                    <div class="quform-element  quform-huge quform-element-text">
+                        <div class="quform-spacer">
+                            
+                            <div class="quform-input">
+                            <!--[if IE]>Name (required)<br /> <![endif]-->
+                                <input id="text_input4" type="text" name="text_input4" placeholder="Name (required)" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="quform-element quform-huge quform-element-text">
+                        <div class="quform-spacer">
+                           
+                            <div class="quform-input">
+                            <!--[if IE]>Phone (required) <br /> <![endif]-->
+                                <input id="text_input5" type="text" name="text_input5" placeholder="Phone (required)" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                    <!-- Begin Text input element -->
+                    <div class="quform-element quform-huge quform-element-text">
+                        <div class="quform-spacer">
+                            <div class="quform-input">
+                            <!--[if IE]>Email (required)<br /> <![endif]-->
+                                <input id="email" type="text" name="email" placeholder="Email (required)" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Text input element -->
+
+                 
+                    <!-- Begin Subject element -->
+                    <div class="quform-element quform-element-select">
+                        <div class="quform-spacer">
+                            <label for="subject">Type of event</label>
+                            <div class="quform-input">
+                                <select class="quform-tooltip" id="subject" name="subject" >
+                                    <option value="">-----</option>
+                                    <option value="Corporate Event">Corporate Meeting</option>
+                                    <option value="Dinner">Luncheon/Dinner</option>
+                                    <option value="Reception">Reception</option>
+                                    <option value="Wedding">Wedding</option>
+                                    <option value="Cocktail Party">Cocktail Party</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Subject element -->
+                    
+                   <!-- Begin Text input element -->
+                    <div class="quform-element quform-huge quform-element-text">
+                        <div class="quform-spacer">
+                            <div class="quform-input">
+                             <!--[if IE]>Desired Event Date(s)<br /> <![endif]-->
+                                <textarea id="text_input3" name="text_input3" style="height: 50px;" placeholder="Desired Event Date(s)"></textarea>
+                            
+                             </div>
+                        </div>
+                    </div>
+                    <!-- End Text input element -->
+                    
+                      <!-- Begin Radio element(Inline)  -->
+                    <div class="quform-element quform-element-radio">
+                        <div class="quform-spacer">
+                            <label>My event date is flexible</label>
+                            <div class="quform-input">
+                                <div class="quform-options quform-options-inline">
+                                    <div class="quform-option">
+                                        <input name="radio_button" value="Yes" type="radio" /><label class="yes_no"> Yes</label>
+                                    </div>
+                                    <div class="quform-option">
+                                        <input name="radio_button" value="No" type="radio" /><label class="yes_no"> No</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Radio element(Inline) -->
+                    
+                    <!-- Begin Date element -->
+                    <div class="quform-element quform-element-date">
+                        <div class="quform-spacer">
+                            <label>Event Time</label>
+                            <div class="quform-input">
+                             <select class="quform-tooltip" id="date" name="date" >
+                                    <option value="">-----</option>
+                                    <option value="Morning">Morning</option>
+                                    <option value="Afternoon">Afternoon</option>
+                                    <option value="Evening">Evening</option>
+                                    <option value="All day">All day</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Date element -->
+                    
+                     <!-- Begin Text input element -->
+                    <div class="quform-element quform-huge quform-element-text">
+                        <div class="quform-spacer">
+                            <div class="quform-input">
+                            <!--[if IE]>No. of Guests (required)<br /> <![endif]-->
+                                <input id="text_input7" type="text" name="text_input7" placeholder="No. of Guests (required)" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Text input element -->
+                    
+                         <!-- Begin Textarea element -->
+                    <div class="quform-element quform-element-textarea quform-huge">
+                        <div class="quform-spacer">
+                            <div class="quform-input">
+                             <!--[if IE]>Tell us about your event<br /> <![endif]-->
+                                <textarea id="textarea" name="textarea" style="height: 130px;" placeholder="Tell us about your event"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Textarea element -->
+                    
+                    
+                    <!-- Begin Single select element -->
+                    <div class="quform-element quform-element-select">
+                        <div class="quform-spacer">
+                            <label for="single_select">How did you hear about us?</label>
+                            <div class="quform-input">
+                                <select class="quform-tooltip" id="single_select" name="single_select" >
+                                    <option value="">-----</option>
+                                    <option value="Website">Website</option>
+                                    <option value="Print Ad">Print Ad</option>
+                                    <option value="Radio">Radio</option>
+                                    <option value="Referral">Referral</option>
+                                    <option value="Previous Event">Previous Event</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single select element -->
+
+                    <!-- Begin Submit button -->
+                    <div>
+                        <div class="quform-submit-inner">
+                            <button type="submit" class="btn btn-primary btn-small form_send" value="Send">SUBMIT</button>
+                        </div>
+                        <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
+                    </div>
+                    <!-- End Submit button -->
+
+                 
+                 
+
+                
+               </div>
+           </div>
+        </form>
+    </div>
+            </div>
+            
+          <div class="span3 ">
+            	<div class="well well-small sidebar_info">
+                
+               
+																
+	
+	<h4 class="social">Get Connected</h4>										
+		<ul>
+			<li class="li_border last">
+				
+				<ul>
+					<li><a href="https://www.facebook.com/CalCatering"><img class="social_icon" src="img/fb.png" /></a>
+						<a href="https://twitter.com/CalCatering"><img class="social_icon" src="img/tw.png" /></a><div class="clear"></div>
+					</li>
+				</ul>
+			</li>
+			
+			
+			
+           		</ul>
+	</div>
+    </div>
+            
+ </div>  
+ </div> 
+
+
+<!-- start sidebar  include -->
+<script type="text/javascript"> 
+	<script type="text/javascript">
+/* <![CDATA[ */
+$(function() {
+	var input = document.createElement("input");
+    if(('placeholder' in input)==false) { 
+		$('[placeholder]').focus(function() {
+			var i = $(this);
+			if(i.val() == i.attr('placeholder')) {
+				i.val('').removeClass('placeholder');
+				if(i.hasClass('password')) {
+					i.removeClass('password');
+					this.type='password';
+				}			
+			}
+		}).blur(function() {
+			var i = $(this);	
+			if(i.val() == '' || i.val() == i.attr('placeholder')) {
+				if(this.type=='password') {
+					i.addClass('password');
+					this.type='text';
+				}
+				i.addClass('placeholder').val(i.attr('placeholder'));
+			}
+		}).blur().parents('form').submit(function() {
+			$(this).find('[placeholder]').each(function() {
+				var i = $(this);
+				if(i.val() == i.attr('placeholder'))
+					i.val('');
+			})
+		});
+	}
+});
+/* ]]> */
+</script>
+</script>
+<script type="text/javascript" src="quform/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="quform/js/plugins.js"></script>
+<script type="text/javascript" src="quform/js/scripts.js"></script>
+	<?php include 'inc/footer.php'; ?>

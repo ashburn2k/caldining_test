@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Le styles -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css" media="all">
+<link rel="stylesheet" id="main_styles_css" href="css/main.css" type="text/css" media="all">
+<link rel="stylesheet" id="main_styles_css" href="css/mobile.css" type="text/css" media="all">
+<link rel="stylesheet" id="mobile_styles_css" href="css/mobile.css" type="text/css" media="screen and (max-device-width: 480px)">
+
+<title>Cal Catering</title>
+</head>
+
+<body class="front">
+
+<div class="navbar-wrapper">
+<?php include 'inc/top_menu.php'; ?>
+</div>
+
+<div class="clear"></div>
+
+<div class="contbody-wrapper">
+	<div class="intro_menu_wrapper">
+    	<div class="container item_menu">
+    		<div class="front_logo"><img src="img/calcatering_logo.png" /></div>
+        	<div class="menu_group">
+        	
+            <div class="menu_cms">
+            <a href="#" title="CMS">
+            	<div class="menu_togo_logo roll_show3">
+                </div>
+                </a>
+                <div class="menu_togo_txt">
+                	<p>Events Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat felis sapien, quis pharetra metus ultricies id. Cras nec est euismod, aliquet mi at, convallis ipsum. 
+                    </p>
+                    <p>Donec hendrerit eu lectus ultricies aliquet. 
+                    </p>
+                    <p><a href="#">order today! >></a>
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="menu_togo">
+            <a href="#" title="togo">
+            	<div class="menu_cms_logo roll_show1">
+                </div>
+                </a>
+                <div class="menu_cms_txt">
+                	<p>To go Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat felis sapien, quis pharetra metus ultricies id. Cras nec est euismod, aliquet mi at, convallis ipsum. 
+                    </p>
+                   
+                    <p><a href="#">find out more >></a>
+                    </p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="menu_full">
+            	<a href="#" title="full">
+                <div class="menu_full_logo roll_show2">
+                </div></a>
+                <div class="menu_full_txt">
+                	<p>CMS Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat felis sapien, quis pharetra metus ultricies id. Cras nec est euismod, aliquet mi at, convallis ipsum. 
+                    </p>
+                    <p>Donec hendrerit eu lectus ultricies aliquet. Morbi hendrerit ligula quis sollicitudin congue. Quisque faucibus quis odio nec hendrerit. Nunc sodales fringilla porta. 
+                    </p>
+                    <p><a href="#">find out more >></a>
+                    </p>
+                </div>
+            </div>
+            
+            
+        </div>
+        </div>
+	</div>
+
+</div>
+
+<div class="clear"></div>
+
+<div class="footer_spa">
+
+</div>
+
+
+  <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script type="text/javascript">
+var userAgent = window.navigator.userAgent;
+
+if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/Android/i) || userAgent.match(/iPod/i)) {
+   // iPad or iPhone
+ window.location = "mobile.html";
+}
+else {
+   // Anything else
+ window.location = "index2.html";
+}
+</script>
+
+    <script>
+     
+       $(document).ready(function () {
+    $(".roll_show1").mouseout(function(){
+        $(".menu_cms_txt").slideUp(1);
+    }).mouseover(function(){
+        $(".menu_cms_txt").slideDown(1);
+    });
+});
+	          $(document).ready(function () {
+    $(".roll_show2").mouseout(function(){
+        $(".menu_full_txt").slideUp(1);
+    }).mouseover(function(){
+        $(".menu_full_txt").slideDown(1);
+    });
+});
+	 
+	        $(document).ready(function () {
+    $(".roll_show3").mouseout(function(){
+        $(".menu_togo_txt").slideUp(1);
+    }).mouseover(function(){
+        $(".menu_togo_txt").slideDown(1);
+    });
+});
+	 
+      
+    </script>
+    
+    
+</body>
+</html>
+
